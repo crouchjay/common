@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="deployPlugins" name="com.trainingstars.server">
+	<property file="build.properties"/>
+	
+	<target name="deployPlugins">
+	
+	</target>
+	
+	<target name="testPlugin" depends="testPluginConfig, deployPlugin">
+		<echo message="Test plugin ${plugin} at location ${workspace.dir}\${plugin}."/>
+		<echo message="Copying contents (config/**) from ${app.dir}.config to ${deploy.server.dir}"/>
+		<fileset dir="${app.dir}.config" includes="config/**" id="contents"/>
+		<copy todir="${deploy.server.dir}" overwrite="true"><fileset refid="contents"/></copy>
+		<exec logoutput="true" dir="${deploy.server.dir}" command="vendor\bin\phpunit" />
+	</target>
+	
+	<target name="undeployPlugin">
+		<echo message="Remove ${plugin} from server."/>
+		<delete dir="${deploy.server.dir}" />
+	</target>
+	
+	<target name="deployPlugin" depends="undeployPlugin, makeDirectory">
+		<fileset dir="${plugin.dir}" includes="${plugin.contents}" id="contents" />
+		<echo message="Copy contents (${plugin.contents}) from ${plugin.dir} to ${deploy.server.dir}"/>
+		<copy todir="${deploy.server.dir}" overwrite="true"><fileset refid="contents"/></copy>
+		<echo message="Run ${composer.update.arg} on plugin"/>
+		<exec logoutput="true" dir="${deploy.server.dir}" command="${composer.update.arg}" />
+	</target>
+	
+	<target name="testPluginConfig">
+		<echo message="Configure phing for testing of plugin ${plugin}."/>
+		<property name="deploy.server.dir" value="${test.server.dir}\${plugin}"/>
+		<property name="directory" value="${deploy.server.dir}"/>
+		<property name="plugin.dir" value="${workspace.dir}/${plugin}"/>
+		
+		<property name="plugin.deploy.required.files" value="${plugin.deploy.files},phpunit.xml"/>
+		<property name="plugin.deploy.required.directories" value="${plugin.deploy.directories},tests/**,bin/**"/>
+		<property name="plugin.contents" value="${plugin.deploy.required.files},${plugin.deploy.required.directories}"/>
+		<property name="composer.update.arg" value="composer update --verbose"/>
+	</target>
+	
+	<target name="makeDirectory">
+		<echo message="Creating directory ${directory}"/>
+		<mkdir dir="${directory}"/>
+	</target>
+			
+</project>

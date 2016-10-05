@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="deployPlugins" name="com.trainingstars.server">
+	<property file="build.properties"/>
+	
+	<target name="deployPlugins">
+	
+	</target>
+	
+	<target name="undeployPlugin">
+		<echo message="Remove ${plugin} from server."/>
+		<delete dir="${deploy.server.dir}" />
+	</target>
+	
+	<target name="deployPlugin" depends="undeployPlugin, makeDirectory">
+		<fileset dir="${plugin.dir}" includes="${plugin.contents}" id="contents" />
+		<echo message="Copy contents (${plugin.contents}) from ${plugin.dir} to ${deploy.server.dir}"/>
+		<copy todir="${deploy.server.dir}" overwrite="true"><fileset refid="contents"/></copy>
+		<echo message="Run composer update on plugin"/>
+		<exec logoutput="true" dir="${deploy.server.dir}" command="${composer.update.arg}" />
+	</target>
+	
+	<target name="testPlugin" depends="testPluginConfig, addToRepository, deployPluginPartsForTesting, deployPlugin">
+		<echo message="Test plugin ${plugin}"/>
+		<exec logoutput="true" dir="${test.server.dir}/${plugin}" command="vendor\bin\phpunit" />
+	</target>
+	
+	<target name="testPluginConfig">
+		<echo message="Config plugin ${plugin} for testing."/>
+		<property name="deploy.server.dir" value="${test.server.dir}/${plugin}"/>
+		<property name="directory" value="${deploy.server.dir}"/>
+		<property name="plugin.dir" value="${repository.dir}/${plugin}"/>
+		<property name="plugin.deploy.required.files" value="${plugin.deploy.files},phpunit.xml"/>
+		<property name="plugin.deploy.required.directories" value="${plugin.deploy.directories},tests/**,bin/**"/>
+		<property name="plugin.contents" value="${plugin.deploy.required.files},${plugin.deploy.required.directories}"/>
+		<property name="composer.update.arg" value="composer update"/>
+	</target>
+	
+	<target name="deployPluginPartsForTesting" depends="undeployPlugin, makeDirectory">
+		<echo message="Deploying app parts to plugin for testing."/>
+		<fileset dir="${app.dir}" includes="${app.deploy.folders}" id="contents"/>
+		<copy todir="${deploy.server.dir}"><fileset refid="contents"/></copy> 
+	</target>
+	
+	<target name="makeDirectory">
+		<echo message="Creating directory ${directory}"/>
+		<mkdir dir="${directory}"/>
+	</target>
+	
+	<target name="addToRepository" depends="removeFromRepository, makeDirectory">
+		<echo message="Sending ${plugin} to the repository ${repository.dir}."/>
+		<fileset dir="${workspace.dir}/${plugin}" includes="${plugin.contents}" id="contents" />
+		<copy todir="${repository.dir}/${plugin}"><fileset refid="contents"/></copy>
+	</target>
+	
+	<target name="removeFromRepository">
+		<echo message="Removing ${plugin} from the repository."/>
+		<delete dir="${repository.dir}/${plugin}"/>
+	</target>
+	
+	<target name="addCommonPluginsToRepository">
+		<echo message="Adding common plugins to repository."/>
+		<foreach list="${common.plugins}" param="plugin" target="addToRepository">
+			<property name="directory" value="${repository.dir}/${plugin}"/>
+			<property name="plugin.deploy.required.files" value="${plugin.deploy.files},phpunit.xml"/>
+			<property name="plugin.deploy.required.directories" value="${plugin.deploy.directories},tests/**,bin/**"/>
+			<property name="plugin.contents" value="${plugin.deploy.required.files},${plugin.deploy.required.directories}"/>
+		</foreach>
+	</target>
+			
+</project>

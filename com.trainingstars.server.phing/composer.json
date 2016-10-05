@@ -1,0 +1,16 @@
+{
+    "name": "trainingstars/landing_parent",
+    "description": "The main landing module for TrainingStars.",
+    "homepage": "http://www.trainingstars.com",
+    "type": "project",
+    "version": "0.0.1",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "phing/phing": "2.*"
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}

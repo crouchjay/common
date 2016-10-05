@@ -1,0 +1,17 @@
+#####################
+# LOCAL.properties
+#####################
+
+trainingstars.dir=D:\TrainingStars
+test.server.dir=${trainingstars.dir}\test-server
+server.dir=${trainingstars.dir}\server
+workspace.dir=${trainingstars.dir}\workspace\gui
+app.dir=${workspace.dir}\com.trainingstars.server.app
+
+app.deploy.folders=bin/**,config/**,logs/**,tmp/**,plugins/**,src/**
+
+plugin.deploy.files=composer.json,README.md
+plugin.deploy.directories=config/**,src/**,webroot/**
+
+common.plugin.prefix=com.trainingstars.server.plugin.common
+common.plugins=${workspace.dir}/${common.plugin.prefix}.base,${workspace.dir}/${common.plugin.prefix}.fsm,${workspace.dir}/${common.plugin.prefix}.translator,${workspace.dir}/${common.plugin.prefx}.sports

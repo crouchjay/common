@@ -1,0 +1,62 @@
+{
+    "name": "trainingstars/coaches_fsm",
+    "description": "CakePHP skeleton app",
+    "homepage": "http://cakephp.org",
+    "type": "cakephp-plugin",
+    "version": "0.0.1",
+    "license": "MIT",
+    "config": {
+    	"http-basic": {
+    		"file:///D:/TrainingStars/repository": {
+    			"username": "Jeremiah",
+    			"password": "Bigdog11"
+    		}
+    	}
+    },
+    "repositories": [
+    	{
+    		"type": "vcs",
+    		"url": "D:/TrainingStars/repository/",
+    		"trunk-path": "trunk",
+    		"branches-path": "branches",
+    		"tags-path": "tags",
+    		"package-path": "com.trainingstars.server.common.plugin.fsm"
+    	}
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "psy/psysh": "@stable",
+        "cakephp/debug_kit": "~3.2",
+        "cakephp/bake": "~1.1",
+        "cakephp/cakephp": "3.3.4",
+        "mobiledetect/mobiledetectlib": "2.*",
+        "cakephp/migrations": "~1.0",
+        "cakephp/plugin-installer": "*",
+        "phpunit/phpunit": "^5.4",
+        "cakephp/cakephp-codesniffer": "2.*",
+        "trainingstars/fsm": "0.0.*"
+    },
+    "suggest": {
+        "markstory/asset_compress": "An asset compression plugin which provides file concatenation and a flexible filter system for preprocessing and minification.",
+        "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
+        "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
+    },
+    "autoload": {
+        "psr-4": {
+            "CoachesFSM\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CoachesFSM\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
