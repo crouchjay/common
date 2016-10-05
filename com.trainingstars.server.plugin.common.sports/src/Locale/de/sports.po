@@ -1,0 +1,362 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-07-17 17:29+0200\n"
+"PO-Revision-Date: 2016-07-17 20:17+0200\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: \n"
+"Language: de\n"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/PositionNotSure.php:21
+#, fuzzy
+msgid "position.not_sure"
+msgstr "Unbekannt"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionDefensiveBack.php:23
+#, fuzzy
+msgid "position.american_football.defensive_back"
+msgstr "Defensive Back"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionDefensiveLine.php:23
+#, fuzzy
+msgid "position.american_football.defensive_line"
+msgstr "Defensive Line"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionKicker.php:23
+#, fuzzy
+msgid "position.american_football.kicker"
+msgstr "Kicker"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionLinebacker.php:23
+#, fuzzy
+msgid "position.american_football.linebacker"
+msgstr "Linebacker"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionOffensiveLine.php:23
+#, fuzzy
+msgid "position.american_football.offensive_line"
+msgstr "Offensive Line"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionPunter.php:27
+#, fuzzy
+msgid "position.american_football.punter"
+msgstr "Punter"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionQuarterback.php:23
+#, fuzzy
+msgid "position.american_football.quarterback"
+msgstr "Quarterback"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionRunningback.php:23
+#, fuzzy
+msgid "position.american_football.runningback"
+msgstr "Runningback"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionTightEnd.php:23
+#, fuzzy
+msgid "position.american_football.tight_end"
+msgstr "Tight End"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/AmericanFootball/PositionWideReceiver.php:23
+#, fuzzy
+msgid "position.american_football.wide_receiver"
+msgstr "Wide Receiver"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Basketball/PositionCenter.php:23
+#, fuzzy
+msgid "position.basketball.center"
+msgstr "Center"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Basketball/PositionForward.php:23
+#, fuzzy
+msgid "position.basketball.forward"
+msgstr "Forward"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Basketball/PositionGuard.php:23
+#, fuzzy
+msgid "position.basketball.guard"
+msgstr "Guard"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Football/PositionDefender.php:23
+msgid "position.football.defender"
+msgstr "Verteidiger"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Football/PositionForward.php:23
+msgid "position.football.forward"
+msgstr "Stürmer"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Football/PositionGoalKeeper.php:23
+msgid "position.football.goal_keeper"
+msgstr "Torhüter"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Football/PositionMidfielder.php:23
+msgid "position.football.midfielder"
+msgstr "Mittelfelder"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionAikido.php:23
+msgid "position.martial_arts.aikido"
+msgstr "Aikido"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionArnis.php:23
+msgid "position.martial_arts.arnis"
+msgstr "Arnis"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionCapoeira.php:23
+msgid "position.martial_arts.capoeira"
+msgstr "Capoeira"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionJeetKuneDo.php:23
+msgid "position.martial_arts.jeet_kune_do"
+msgstr "Jeet Kune Do"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionJiuJitsu.php:23
+msgid "position.martial_arts.jiu_jitsu"
+msgstr "Jiu Jitsu"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionJudo.php:23
+msgid "position.martial_arts.judo"
+msgstr "Judo"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionKarate.php:23
+msgid "position.martial_arts.karate"
+msgstr "Karate"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionKenjutsu.php:23
+msgid "position.martial_arts.kenjutsu"
+msgstr "Kenjutsu"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionKickboxing.php:23
+msgid "position.martial_arts.kickboxing"
+msgstr "Kickboxing"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionKravMaga.php:23
+msgid "position.martial_arts.krav_maga"
+msgstr "Krav Maga"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionKungFu.php:23
+msgid "position.martial_arts.kung_fu"
+msgstr "Kung Fu"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionMMA.php:23
+msgid "position.martial_arts.m_m_a"
+msgstr "MMA"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionMuayThai.php:23
+msgid "position.martial_arts.muay_thai"
+msgstr "Muay Thai"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionNinjutsu.php:23
+msgid "position.martial_arts.ninjutsu"
+msgstr "Ninjutsu"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionTaeKwonDo.php:23
+msgid "position.martial_arts.tae_kwon_do"
+msgstr "Tae Kwon Do"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/MartialArts/PositionTaiChi.php:23
+msgid "position.martial_arts.tai_chi"
+msgstr "Taijiquan"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionAerobic.php:23
+msgid "position.strength_and_conditioning.aerobic"
+msgstr "Aerobic"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionBodybuilding.php:23
+msgid "position.strength_and_conditioning.bodybuilding"
+msgstr "Body Building"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionBootCamp.php:23
+msgid "position.strength_and_conditioning.boot_camp"
+msgstr "Boot Camp"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionConditioning.php:23
+msgid "position.strength_and_conditioning.conditioning"
+msgstr "Konditioning"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionCrossFit.php:23
+msgid "position.strength_and_conditioning.cross_fit"
+msgstr "Cross Fit"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionCrossTraining.php:23
+msgid "position.strength_and_conditioning.cross_training"
+msgstr "Cross Training"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionHIIT.php:23
+msgid "position.strength_and_conditioning.h_i_i_t"
+msgstr "HIIT"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionNutrition.php:23
+msgid "position.strength_and_conditioning.nutrition"
+msgstr "Ernährung"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionObstacleTraining.php:23
+msgid "position.strength_and_conditioning.obstacle_training"
+msgstr "Obstacle Training"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionOlympicWeightlifting.php:23
+msgid "position.strength_and_conditioning.olympic_weightlifting"
+msgstr "Gewichtheben"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionPowerlifting.php:23
+msgid "position.strength_and_conditioning.powerlifting"
+msgstr "Kraftdreikampf"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionSpinning.php:23
+msgid "position.strength_and_conditioning.spinning"
+msgstr "Spnning"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionTabataTraining.php:23
+msgid "position.strength_and_conditioning.tabata_training"
+msgstr "Tabata Training"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionWeightLoss.php:23
+msgid "position.strength_and_conditioning.weight_loss"
+msgstr "Gewichtsreduktion"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/StrengthAndConditioning/PositionZumba.php:23
+msgid "position.strength_and_conditioning.zumba"
+msgstr "Zumba"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionCrossCountry.php:23
+msgid "position.track_and_field.cross_country"
+msgstr "Crosslauf "
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionHurdles.php:23
+msgid "position.track_and_field.hurdles"
+msgstr "Hürden"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionJumps.php:23
+msgid "position.track_and_field.jumps"
+msgstr "Sprungen"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionLongDistance.php:23
+msgid "position.track_and_field.long_distance"
+msgstr "Langstreckenlauf"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionMarathon.php:23
+msgid "position.track_and_field.marathon"
+msgstr "Marathon"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionMiddleDistance.php:23
+msgid "position.track_and_field.middle_distance"
+msgstr "Mittelstreckenlauf"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionSprints.php:23
+msgid "position.track_and_field.sprints"
+msgstr "Sprints"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/TrackAndField/PositionThrows.php:23
+msgid "position.track_and_field.throws"
+msgstr "Wurfen"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Triathlon/PositionCycling.php:23
+msgid "position.triathlon.cycling"
+msgstr "Radfahren"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Triathlon/PositionRunning.php:23
+msgid "position.triathlon.running"
+msgstr "Laufen"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Triathlon/PositionSwimming.php:23
+msgid "position.triathlon.swimming"
+msgstr "Schwimmen"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Volleyball/PositionLibero.php:23
+msgid "position.volleyball.libero"
+msgstr "Stammspieler"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Volleyball/PositionMiddleBlocker.php:23
+msgid "position.volleyball.middle_blocker"
+msgstr "Mittelblocker"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Volleyball/PositionOpposite.php:23
+msgid "position.volleyball.opposite"
+msgstr "Diagonalspieler"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Volleyball/PositionOutsideHitter.php:23
+msgid "position.volleyball.outside_hitter"
+msgstr "Außenangreifer"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Volleyball/PositionSetter.php:23
+msgid "position.volleyball.setter"
+msgstr "Zuspieler"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionAshtanga.php:23
+msgid "position.yoga.ashtanga"
+msgstr "Ashtanga"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionBikram.php:23
+msgid "position.yoga.bikram"
+msgstr "Bikram"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionHatha.php:23
+msgid "position.yoga.hatha"
+msgstr "Hatha"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionIntegral.php:23
+msgid "position.yoga.integral"
+msgstr "Integrales"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionIyengar.php:23
+msgid "position.yoga.iyengar"
+msgstr "Iyengar"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionKripalu.php:23
+msgid "position.yoga.kripalu"
+msgstr "Kripalu"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionRestorative.php:23
+msgid "position.yoga.restorative"
+msgstr "Restorative"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionVinyasa.php:23
+msgid "position.yoga.vinyasa"
+msgstr "Vinyasa"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Position/Yoga/PositionYin.php:23
+msgid "position.yoga.yin"
+msgstr "Yin"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportAmericanFootball.php:20
+msgid "sports.american_football"
+msgstr "American Football"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportBasketball.php:20
+msgid "sports.basketball"
+msgstr "Basketball"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportFootball.php:20
+msgid "sports.football"
+msgstr "Fußball"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportMartialArts.php:20
+msgid "sports.martial_arts"
+msgstr "Kampfsport"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportStrengthAndConditioning.php:20
+msgid "sports.strength_and_conditioning"
+msgstr "Kraft und Konditionstraining"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportTrackAndField.php:20
+msgid "sports.track_and_field"
+msgstr "Leichtathletik"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportTriathlon.php:20
+msgid "sports.triathlon"
+msgstr "Triathlon"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportVolleyball.php:20
+msgid "sports.volleyball"
+msgstr "Volleyball"
+
+#: C:/TrainingStars/com.trainingstars.server.common.sports/plugins/Sports/src/Model/Resource/Sport/SportYoga.php:20
+msgid "sports.yoga"
+msgstr "Yoga"
