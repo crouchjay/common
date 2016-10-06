@@ -2,15 +2,11 @@
 <project default="deployPlugins" name="com.trainingstars.server">
 	<property file="build.properties"/>
 	
-	<target name="deployPlugins">
-	
-	</target>
-	
-	<target name="testPlugin" depends="testPluginConfig, deployPlugin">
-		<echo message="Test plugin ${plugin} at location ${workspace.dir}\${plugin}."/>
-		<echo message="Copying contents (config/**) from ${app.dir}.config to ${deploy.server.dir}"/>
-		<fileset dir="${app.dir}.config" includes="config/**" id="contents"/>
-		<copy todir="${deploy.server.dir}" overwrite="true"><fileset refid="contents"/></copy>
+	<target name="testPlugin">
+		<echo message="Test plugin ${plugin}."/>
+		<mkdir dir="${test.server.dir}"/>
+		<fileset dir="${git.dir}/${plugin}" excludes="${copy.excludes}" id="contents"/>
+		<copy todir="${test.server.dir}/${plugin}"><fileset refid="contents"/></copy>
 		<exec logoutput="true" dir="${deploy.server.dir}" command="vendor\bin\phpunit" />
 	</target>
 	

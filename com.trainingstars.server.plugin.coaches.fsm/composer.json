@@ -5,22 +5,13 @@
     "type": "cakephp-plugin",
     "version": "0.0.1",
     "license": "MIT",
-    "config": {
-    	"http-basic": {
-    		"file:///D:/TrainingStars/repository": {
-    			"username": "Jeremiah",
-    			"password": "Bigdog11"
-    		}
-    	}
-    },
     "repositories": [
     	{
-    		"type": "vcs",
-    		"url": "D:/TrainingStars/repository/",
-    		"trunk-path": "trunk",
-    		"branches-path": "branches",
-    		"tags-path": "tags",
-    		"package-path": "com.trainingstars.server.common.plugin.fsm"
+    		"type": "path",
+    		"url": "../com.trainingstars.server.plugin.common.fsm",
+    		"options": {
+    			"syslink": false
+    		}
     	}
     ],
     "require": {
