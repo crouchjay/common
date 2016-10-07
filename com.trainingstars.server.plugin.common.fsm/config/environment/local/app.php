@@ -1,3 +1,3 @@
 <?php
 
-return ['App' => ['namespace' => 'Base']];
+return ['App' => ['namespace' => 'FSM']];
