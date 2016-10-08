@@ -12,11 +12,12 @@
         "psy/psysh": "@stable",
         "cakephp/debug_kit": "~3.2",
         "cakephp/bake": "~1.1",
-        "cakephp/cakephp": "3.3.4",
+        "cakephp/cakephp": "3.3.5",
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
-        "phpunit/phpunit": "5.5",
+        "phpunit/phpunit": "^5.6.1",
+        "sebastian/phpcpd": "*",
         "cakephp/cakephp-codesniffer": "2.*"
     },
     "suggest": {
