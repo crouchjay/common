@@ -16,7 +16,8 @@
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
-        "phpunit/phpunit": "^5.4",
+        "phpunit/phpunit": "^5.6.1",
+        "sebastian/phpcpd": "*",
         "phing/phing": "2.*"
     },
     "suggest": {
