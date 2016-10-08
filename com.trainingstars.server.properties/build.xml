@@ -1,44 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="deployPlugins" name="com.trainingstars.server">
+<project default="testPlugin" name="com.trainingstars.server">
 	<property file="build.properties"/>
 	
 	<target name="testPlugin">
 		<echo message="Test plugin ${plugin}."/>
+		<echo message="Creating directory ${test.server.dir}"/>
 		<mkdir dir="${test.server.dir}"/>
-		<fileset dir="${git.dir}/${plugin}" excludes="${copy.excludes}" id="contents"/>
-		<copy todir="${test.server.dir}/${plugin}"><fileset refid="contents"/></copy>
+		<echo message="Copying files from cake project."/>
+		<fileset dir="${git.dir}/com.trainingstars.server.cake" excludes="${copy.excludes}" id="cake.contents"/>
+		<copy todir="${test.server.dir}/${plugin}" overwrite="true"><fileset refid="cake.contents"/></copy>
+		<echo message="Copying files from app project."/>
+		<fileset dir="${git.dir}/com.trainingstars.server.app" excludes="${copy.excludes}" id="app.contents"/>
+		<copy todir="${test.server.dir}/${plugin}" overwrite="true"><fileset refid="app.contents"/></copy>
+		<echo message="Copying files from app.config project."/>
+		<fileset dir="${git.dir}/com.trainingstars.server.app.config" excludes="${copy.excludes}" id="app.config.contents"/>
+		<copy todir="${test.server.dir}/${plugin}" overwrite="true"><fileset refid="app.config.contents"/></copy>
+		<echo message="Copying files from ${plugin} project."/>
+		<fileset dir="${git.dir}/${plugin}" excludes="${copy.excludes}" id="plugin.contents"/>
+		<copy todir="${test.server.dir}/${plugin}" overwrite="true"><fileset refid="plugin.contents"/></copy>
+		<echo message="Running composer."/>
 		<exec logoutput="true" dir="${test.server.dir}/${plugin}" command="composer update" />
+		<echo message="Running tests."/>
 		<exec logoutput="true" dir="${test.server.dir}/${plugin}" command="vendor\bin\phpunit" />
+		<echo message="Finding duplicated lines."/>
+		<exec logoutput="true" dir="${test.server.dir}/${plugin}" command="vendor\bin\phpcpd ${test.server.dir}/${plugin}/src --min-lines=2"/>
 	</target>
-	
-	<target name="undeployPlugin">
-		<echo message="Remove ${plugin} from server."/>
-		<delete dir="${deploy.server.dir}" />
-	</target>
-	
-	<target name="deployPlugin" depends="undeployPlugin, makeDirectory">
-		<fileset dir="${plugin.dir}" includes="${plugin.contents}" id="contents" />
-		<echo message="Copy contents (${plugin.contents}) from ${plugin.dir} to ${deploy.server.dir}"/>
-		<copy todir="${deploy.server.dir}" overwrite="true"><fileset refid="contents"/></copy>
-		<echo message="Run ${composer.update.arg} on plugin"/>
-		<exec logoutput="true" dir="${deploy.server.dir}" command="${composer.update.arg}" />
-	</target>
-	
-	<target name="testPluginConfig">
-		<echo message="Configure phing for testing of plugin ${plugin}."/>
-		<property name="deploy.server.dir" value="${test.server.dir}\${plugin}"/>
-		<property name="directory" value="${deploy.server.dir}"/>
-		<property name="plugin.dir" value="${workspace.dir}/${plugin}"/>
-		
-		<property name="plugin.deploy.required.files" value="${plugin.deploy.files},phpunit.xml"/>
-		<property name="plugin.deploy.required.directories" value="${plugin.deploy.directories},tests/**,bin/**"/>
-		<property name="plugin.contents" value="${plugin.deploy.required.files},${plugin.deploy.required.directories}"/>
-		<property name="composer.update.arg" value="composer update --verbose"/>
-	</target>
-	
-	<target name="makeDirectory">
-		<echo message="Creating directory ${directory}"/>
-		<mkdir dir="${directory}"/>
-	</target>
+
 			
 </project>
